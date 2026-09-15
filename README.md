@@ -1,24 +1,6 @@
 # Hyperspectral-Image-Denoising-Benchmark
 
-A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( https://github.com/seniusen) and [Junjun Jiang](http://homepage.hit.edu.cn/jiangjunjun).
-
-# Databases 
-- [CAVE dataset](http://www.cs.columbia.edu/CAVE/databases/multispectral/)
-- [AVIRIS](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
-- [ROSIS](http://lesun.weebly.com/hyperspectral-data-set.html)
-- [HYDICE](https://www.erdc.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/610433/hypercube/)
-- [EO-1 Hyperion Data](https://lta.cr.usgs.gov/ALI)
-- [Harvard dataset](http://vision.seas.harvard.edu/hyperspec/explore.html)
-- [iCVL dataset](http://icvl.cs.bgu.ac.il/hyperspectral/)
-- [NUS datase](https://sites.google.com/site/hyperspectralcolorimaging/dataset/general-scenes)
-- [NTIRE18 dataset](http://www.vision.ee.ethz.ch/ntire18/)
-
-# Image Quality Measurement 
-- Peak Signal to Noise Ratio (PSNR)
-- Structural SIMilarity index (SSIM)
-- Feature SIMilarity index (FSIM)
-- Erreur Relative Globale Adimensionnelle de Synthèse (ERGAS)
-- Spectral Angle Mapper (SAM)
+A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( https://github.com/seniusen) and [Junjun Jiang](http://homepage.hit.edu.cn/jiangjunjun). Editted By Yui FUJIWARA. 
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=junjun-jiang/Hyperspectral-Image-Denoising-Benchmark) Since 2022/5/7 
 
@@ -105,3 +87,21 @@ Mamba. LaMamba > SSUMamba.
 Sequence to Sequence. 領域分割しているため. 
 ### 05: Mac-Net.  
 物理モデル + Unet. ブラックボックス化の回避. 
+
+# Databases 
+- [CAVE dataset](http://www.cs.columbia.edu/CAVE/databases/multispectral/)
+- [AVIRIS](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+- [ROSIS](http://lesun.weebly.com/hyperspectral-data-set.html)
+- [HYDICE](https://www.erdc.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/610433/hypercube/)
+- [EO-1 Hyperion Data](https://lta.cr.usgs.gov/ALI)
+- [Harvard dataset](http://vision.seas.harvard.edu/hyperspec/explore.html)
+- [iCVL dataset](http://icvl.cs.bgu.ac.il/hyperspectral/)
+- [NUS datase](https://sites.google.com/site/hyperspectralcolorimaging/dataset/general-scenes)
+- [NTIRE18 dataset](http://www.vision.ee.ethz.ch/ntire18/)
+
+# Image Quality Measurement 
+- Peak Signal to Noise Ratio (PSNR)
+- Structural SIMilarity index (SSIM)
+- Feature SIMilarity index (FSIM)
+- Erreur Relative Globale Adimensionnelle de Synthèse (ERGAS)
+- Spectral Angle Mapper (SAM)
