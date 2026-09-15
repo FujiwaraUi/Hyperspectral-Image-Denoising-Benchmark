@@ -2,12 +2,11 @@
 
 A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( https://github.com/seniusen) and [Junjun Jiang](http://homepage.hit.edu.cn/jiangjunjun).
 
-#### Other methods for Non-i.i.d. Noise
-- Denoising Hyperspectral Image with Non-i.i.d. Noise Structure, IEEE TCYB2017, Y. Chen et al. [[PDF]](http://arxiv.org/pdf/1702.00098v1.pdf)[[Code]](http://gr.xjtu.edu.cn/c/document_library/get_file?folderId=2406028&name=DLFE-88042.zip)
+## Other methods for Non-i.i.d. Noise
 - Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising, ECCV 2024, Jiahua Xiao, et al. [[PDF]](https://link.springer.com/content/pdf/10.1007/978-3-031-73027-6_13.pdf?pdf=inline%20link), [[Code]](https://github.com/MIV-XJTU/RAS2S)
 - Hipandas: Hyperspectral Image Joint Denoising and Super-Resolution by Image Fusion with the Panchromatic Image, ICCV 2025, Shuang Xu, et al. [[PDF]](https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.pdf), [[Code]](https://github.com/shuangxu96/Hipandas)
 
-#### Databases 
+## Databases 
 - [CAVE dataset](http://www.cs.columbia.edu/CAVE/databases/multispectral/)
 - [AVIRIS](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 - [ROSIS](http://lesun.weebly.com/hyperspectral-data-set.html)
@@ -18,7 +17,7 @@ A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( h
 - [NUS datase](https://sites.google.com/site/hyperspectralcolorimaging/dataset/general-scenes)
 - [NTIRE18 dataset](http://www.vision.ee.ethz.ch/ntire18/)
 
-#### Image Quality Measurement 
+## Image Quality Measurement 
 - Peak Signal to Noise Ratio (PSNR)
 - Structural SIMilarity index (SSIM)
 - Feature SIMilarity index (FSIM)
@@ -28,34 +27,22 @@ A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( h
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=junjun-jiang/Hyperspectral-Image-Denoising-Benchmark) Since 2022/5/7 
 
 # Code
-#### Multi-band based methods
+## Multi-band based methods
 
-###### **[---Transform domain method---]**
+#### **[---Transform domain method---]**
 - Real Noise Decoupling for Hyperspectral Image Denoising, AAAI 2026, Yingkai Zhang, et al. [[PDF]](https://arxiv.org/pdf/2511.17196). [[Code]](https://github.com/yingkai-zhang/RND.git)
 
-###### **[---Spatial domain methods---]**
-- **[GCS and NSS and Tensor]** Decomposable nonlocal tensor dictionary learning for multispectral image denoising, CVPR2014, P. Yi et al. [[Code]](http://gr.xjtu.edu.cn/c/document_library/get_file?folderId=1766524&name=DLFE-38410.zip)
-- **[GCS and NSS]** Multispectral images denoising by intrinsic tensor sparsity regularization, CVPR2016, Q. Xie et al. [[Code]](http://gr.xjtu.edu.cn/c/document_library/get_file?folderId=2343711&name=DLFE-86323.zip)
-
-
-- **[LR]** Hyperspectral image restoration using low-rank matrix recovery, TGRS2014, H. Zhang et al. [[PDF]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/papers/Hyperspectral%20Image%20Restoration%20Using%20Low-Rank%20Matrix%20Recovery.pdf)[[Code]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/resource/LRMR_HSI%20restoration.zip)
-- **[LR]** Hyperspectral Image Denoising via Noise-Adjusted Iterative Low-Rank Matrix Approximation, JStars2015, H. Zhang et al. [[PDF]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/papers/Hyperspectral%20Image%20Denoising%20via%20Noise-Adjusted%20Iterative%20Low-Rank%20Matrix%20Approximation.pdf)[[Code]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/resource/NAILRMA_HSI%20denoising.zip)
-- **[LR]** Hyperspectral image denoising via sparse representation and low-rank constraint, TGRS2015, Y. Zhao et al. [[Code]](http://pan.baidu.com/s/1sjNTijj)
-- **[LR and GCS]** Hyperspectral Image Denoising Using Local Low-Rank Matrix Recovery and Global Spatial-Spectral Total Variation, JStars2015, H. Zhang et al. [[PDF]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/papers/Hyperspectral%20Image%20Denoising%20Using%20Local%20Low-Rank%20Matrix%20Recovery%20and%20Global%20Spatial-Spectral%20Total%20Variation.pdf)[[Code]](http://www.lmars.whu.edu.cn/prof_web/zhanghongyan/resource/LLRGTV.rar)
-- **[[LR  and Tensor]]** Hyper-Laplacian Regularized Unidirectional Low-rank Tensor Recovery for Multispectral Image Denoising, CVPR2017, Y. Chang et al. [[Code]](http://www.escience.cn/system/file?fileId=91483)
-- **[LR]** Hyperspectral Image Denoising with Superpixel Segmentation and Low-Rank Representation, INS2017, F. Fan et al. [[Code]](http://www.escience.cn/system/file?fileId=19)
-- **[LR]** Fast Superpixel based Subspace Low Rank Learning Method for Hyperspectral Denoising. IEEE Access,2018, L. Sun et al. [[Code]](http://www.escience.cn/system/file?fileId=97575)
-- **[LR]** Hyperspectral Image Restoration Using Low-Rank Representation on Spectral Difference Image, J-STARS2017, L. Sun et al. [[Code]](http://www.escience.cn/system/file?fileId=90518)
-- **[LR]** Fast hyperspectral image denoising and inpainting based on low-rank and sparse representations, J-STARS2018, L. Zhuang et al. [[PDF]](http://www.lx.it.pt/~bioucas/files/submitted_ieee_jstars_2017.pdf)[[Code]](www.lx.it.pt/∼bioucas/code/Demo_FastHyDe_FastHyIn.rar)
-- **[Tensor]** Color Image and Multispectral Image Denoising Using Block Diagonal Representation, arXiv2019, Zhaoming Kong et al. [[PDF]](https://arxiv.org/pdf/1902.03954.pdf)[[Code]](http://openremotesensing.net/wp-content/uploads/2018/03/MatlabCodes.zip)
+#### **[---Spatial domain methods---]**
 - HIR-Diff: Unsupervised Hyperspectral Image Restoration Via Improved Diffusion Models, CVPR 2024, Li Pang, et al. [[PDF]](https://openaccess.thecvf.com/content/CVPR2024/papers/Pang_HIR-Diff_Unsupervised_Hyperspectral_Image_Restoration_Via_Improved_Diffusion_Models_CVPR_2024_paper.pdf), [[Code]](https://github.com/LiPang/HIRDiff)
 
-#### Deep learning methods
+## Deep learning methods
+#### **[--- Earlist ---]**
 - Hyperspectral Image Denoising Employing a Spatial-Spectral Deep Residual Convolutional Neural Network, TGRS2018, Q. Yuan et al. [[Code]](https://github.com/WHUQZhang/HSID-CNN)
 - Deep Hyperspectral Prior: Denoising, Inpainting, Super-Resolution, arxiv2019, Oleksii Sidorov et al. [[Code]](https://github.com/acecreamu/deep-hs-prior) [[Pdf]](https://arxiv.org/pdf/1902.00301)
 - Hybrid Noise Removal in Hyperspectral Imagery With a Spatial-Spectral Gradient Network, IEEE TGRS 2019, Qiang Zhang et al. [[Code]](https://github.com/WHUQZhang/SSGN) [[Pdf]](https://arxiv.org/pdf/1810.00495)
-- Deep Spatial-spectral Representation Learning for Hyperspectral Image Denoising, IEEE TCI 2019, Weisheng Dong et al. [[Pdf]](https://ieeexplore.ieee.org/document/8734833)[[Code]](http://see.xidian.edu.cn/faculty/wsdong/Code_release/DENOISE_NG_ST.tar.gz)
 - Deep Spatial-Spectral Global Reasoning Network for Hyperspectral Image Denoising, IEEE TGRS 2021, X. Cao et al. [[Code]](https://github.com/xiangyongcao/GRN)
+
+#### **[--- Latest ---]**
 - SSUMamba: Spatial–Spectral Selective State Space Model for Hyperspectral Image Denoising, IEEE TGRS 2024, Guanyiman Fu et al. [[Code]](https://github.com/lronkitty/SSUMamba)
 - Hyperspectral Image Denoising via Spatial–Spectral Recurrent Transformer, IEEE TGRS 2024, Guanyiman Fu et al. [[PDF]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10463066)[[Code]](https://github.com/lronkitty/SSRT)
 - HIR-Diff: Unsupervised Hyperspectral Image Restoration Via Improved Diffusion Models, CVPR 2024, Li Pang et al. [[PDF]](https://openaccess.thecvf.com/content/CVPR2024/papers/Pang_HIR-Diff_Unsupervised_Hyperspectral_Image_Restoration_Via_Improved_Diffusion_Models_CVPR_2024_paper.pdf)[[Code]](https://github.com/LiPang/HIRDiff)
@@ -63,3 +50,5 @@ A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( h
 - VolFormer: Explore More Comprehensive Cube Interaction for Hyperspectral Image Restoration and Beyond, CVPR 2025, Dabing Yu, et al. [[PDF]](https://openaccess.thecvf.com/content/CVPR2025/papers/Yu_VolFormer_Explore_More_Comprehensive_Cube_Interaction_for_Hyperspectral_Image_Restoration_CVPR_2025_paper.pdf), [[Code]](https://github.com/yudadabing/VolFormer)
 - LaMamba: Linear Attention Mamba for Hyperspectral Image Denoising, IEEE TGRS 2025, Puhong Duan, et al. [[PDF]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11177616). [[Code]](https://github.com/PuhongDuan/LaMamba.git).
 - MP-HSIR: A Multi-Prompt Framework for Universal Hyperspectral Image Restoration. ICCV 2025, Zhehui Wu, et al. [[PDF]](https://arxiv.org/pdf/2503.09131). [[Code]](https://github.com/ZhehuiWu/MP-HSIR.git).
+- RAS2S: Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising, ECCV 2024, Jiahua Xiao, et al [[PDF]](https://link.springer.com/chapter/10.1007/978-3-031-73027-6_13), [[Code]](https://github.com/MIV-XJTU/RAS2S)
+- QRNN3D: 3D Quasi-Recurrent Neural Network for Hyperspectral Image Denoising, IEEE 2020, Kaixuan Wei, et al [[PDF]](https://arxiv.org/pdf/2003.04547)[[Code]](https://github.com/Vandermode/QRNN3D)
