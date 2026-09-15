@@ -84,7 +84,7 @@ Core: 物理モデル + Spacial DL。他モデルよりも性能はひいが、�
 #### LaMamba: Linear Attention Mamba for Hyperspectral Image Denoising
 | Model-Based Methods | Deep Learning-Based Methods |
 |---|---|
-|LRMR, NGMeet, HyDe, NMoG, LRTDTV| T2SC, MACNet, SST, SERT, HACNet, SSUMamba|
+|LRMR, NGMeet, HyDe, NMoG, LRTDTV| T2SC, MACNet, SST, SERT, HAC-Net, SSUMamba|
 #### RAS2S: Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising
 | Model-Based Methods | Deep Learning-Based Methods |
 |---|---|
