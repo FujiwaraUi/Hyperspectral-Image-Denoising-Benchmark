@@ -95,13 +95,13 @@ Core: 物理モデル + Spacial DL。他モデルよりも性能はひいが、�
 |MB4D, TDL, MTSNMF|LLRT, NGMeet, LRMR, LRTDTV, FastHyDe|Dn-CNN, HSI-SDe, HSID-CNN, QRNN3D |
 
 ## Adopt methods. 
-01: SSRT-UNet.   
+### 01: SSRT-UNet.   
 Transformer. SSRT-UNet > SSUMamba. 
-02: VolFormer.   
+### 02: VolFormer.   
 Transformer. 
-03: LaMamba.   
+### 03: LaMamba.   
 Mamba. LaMamba > SSUMamba. 
-04: RAS2S.   
+### 04: RAS2S.   
 Sequence to Sequence. 領域分割しているため. 
-05: Mac-Net.  
+### 05: Mac-Net.  
 物理モデル + Unet. ブラックボックス化の回避. 
