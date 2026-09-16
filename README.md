@@ -1,18 +1,4 @@
 # Hyperspectral-Image-Denoising-Benchmark
-
-A list of hyperspectral image denoising resources collected by [Yongsen Zhao]( https://github.com/seniusen) and [Junjun Jiang](http://homepage.hit.edu.cn/jiangjunjun). Editted By Yui FUJIWARA. 
-
-![visitors](https://visitor-badge.glitch.me/badge?page_id=junjun-jiang/Hyperspectral-Image-Denoising-Benchmark) Since 2022/5/7 
-
-# Code
-## Multi-band based methods
-
-### **[---Transform domain method---]**
-- Real Noise Decoupling for Hyperspectral Image Denoising, AAAI 2026, Yingkai Zhang, et al. [[PDF]](https://arxiv.org/pdf/2511.17196). [[Code]](https://github.com/yingkai-zhang/RND.git)
-
-### **[---Spatial domain methods---]**
-- HIR-Diff: Unsupervised Hyperspectral Image Restoration Via Improved Diffusion Models, CVPR 2024, Li Pang, et al. [[PDF]](https://openaccess.thecvf.com/content/CVPR2024/papers/Pang_HIR-Diff_Unsupervised_Hyperspectral_Image_Restoration_Via_Improved_Diffusion_Models_CVPR_2024_paper.pdf), [[Code]](https://github.com/LiPang/HIRDiff)
-
 ## Deep learning methods
 ### **[--- Earlist ---]**
 - Hyperspectral Image Denoising Employing a Spatial-Spectral Deep Residual Convolutional Neural Network, TGRS2018, Q. Yuan et al. [[Code]](https://github.com/WHUQZhang/HSID-CNN)
@@ -35,16 +21,14 @@ Core: Transformer。Transformer ベースで、空間方向とスペクトル方
 Core: Mamba。既存のMamba は入力順序に強く依存し、長いシーケンスに対して損失が生じやすい。LaMamba は SSUMamba よりも性能が良い。
 - MP-HSIR: A Multi-Prompt Framework for Universal Hyperspectral Image Restoration. ICCV 2025, Zhehui Wu, et al. [[PDF]](https://arxiv.org/pdf/2503.09131)[[Code]](https://github.com/ZhehuiWu/MP-HSIR.git).   
 Core: プロンプトエンジニアリング + Transformer。ノイズ、ボケ、雲・霞、データ欠損などの多様な劣化に対して、プロンプトエンジニアリングを中人に解決する。ちょっとやりたいこととは違うかな。
-- RAS2S: Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising, ECCV 2024, Jiahua Xiao, et al. [[PDF]](https://link.springer.com/chapter/10.1007/978-3-031-73027-6_13)[[Code]](https://github.com/MIV-XJTU/RAS2S).  
-Core: Sequence to Sequence。デノイジングをS2Sに置き換える。領域分割してより精度を向上させる。精度はもしかしてあまり良くない？
 - QRNN3D: 3D Quasi-Recurrent Neural Network for Hyperspectral Image Denoising, IEEE 2020, Kaixuan Wei, et al. [[PDF]](https://arxiv.org/pdf/2003.04547)[[Code]](https://github.com/Vandermode/QRNN3D).  
 Core: Neural Network。2020 年だから他と比較すると古い。データ分割とか性の比較でよく出てくるので一応出しておいく。
 - MAC-Net: Model-Aided Nonlocal Neural Network for Hyperspectral Image Denoising, IEEE 2022, Fengchao Xiong, et al. [[PDF]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9631264)[[Code]](https://github.com/bearshng/mac-net).  
 Core: 物理モデル + Spacial DL。他モデルよりも性能はひいが、ブラックボックス化の回避に一石投じている。
 
 ## Other methods for Non-i.i.d. Noise
-- Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising, ECCV 2024, Jiahua Xiao, et al. [[PDF]](https://link.springer.com/content/pdf/10.1007/978-3-031-73027-6_13.pdf?pdf=inline%20link), [[Code]](https://github.com/MIV-XJTU/RAS2S)
-- Hipandas: Hyperspectral Image Joint Denoising and Super-Resolution by Image Fusion with the Panchromatic Image, ICCV 2025, Shuang Xu, et al. [[PDF]](https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Hipandas_Hyperspectral_Image_Joint_Denoising_and_Super-Resolution_by_Image_Fusion_ICCV_2025_paper.pdf), [[Code]](https://github.com/shuangxu96/Hipandas)
+- Region-Aware Sequence-to-Sequence Learning for Hyperspectral Denoising, ECCV 2024, Jiahua Xiao, et al. [[PDF]](https://link.springer.com/content/pdf/10.1007/978-3-031-73027-6_13.pdf?pdf=inline%20link), [[Code]](https://github.com/MIV-XJTU/RAS2S).  
+Core: Sequence to Sequence。デノイジングをS2Sに置き換える。領域分割してより精度を向上させる。精度はもしかしてあまり良くない？
 
 ## Compare
 #### SSUMamba: Spatial–Spectral Selective State Space Model for Hyperspectral Image Denoising
@@ -78,15 +62,11 @@ Core: 物理モデル + Spacial DL。他モデルよりも性能はひいが、�
 
 ## Adopt methods. 
 ### 01: SSRT-UNet.   
-Transformer. SSRT-UNet > SSUMamba. 
 ### 02: VolFormer.   
-Transformer. 
 ### 03: LaMamba.   
-Mamba. LaMamba > SSUMamba. 
 ### 04: RAS2S.   
-Sequence to Sequence. 領域分割しているため. 
 ### 05: Mac-Net.  
-物理モデル + Unet. ブラックボックス化の回避. 
+### 06: QRNN3D. 
 
 # Databases 
 - [CAVE dataset](http://www.cs.columbia.edu/CAVE/databases/multispectral/)
